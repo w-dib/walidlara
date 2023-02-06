@@ -63,7 +63,7 @@ export default function Home() {
                     fill="currentColor"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                       clip-rule="evenodd"
                     />
@@ -81,6 +81,23 @@ export default function Home() {
                 there!
               </p>
               <p className="leading-1 text-gray-500">
+                <span className="font-bold underline decoration-blue-500 decoration-2">
+                  getting there
+                </span>
+                : to get to Paphos, Cyprus, you can fly to Larnaca International
+                Airport (LCA). From there, you can take a taxi to Paphos, which
+                is about 1 hour and 30 minutes away (~115 €). Alternatively, you
+                can take a{" "}
+                <Link
+                  href="https://www.paphosbus.com/paphos-airport-bus/larnaca-airport-shuttle"
+                  className="font-medium text-blue-500 hover:text-blue-600"
+                >
+                  bus{" "}
+                </Link>{" "}
+                (~2 to 3 €) from Larnaca to Paphos, which is about 2 hours and
+                30 minutes away.
+              </p>
+              <p className="leading-1 text-gray-500">
                 You can stay anywhere in Paphos. Otherwise, a special discount
                 is provided by the{" "}
                 <Link
@@ -89,19 +106,12 @@ export default function Home() {
                 >
                   Coral Beach Hotel & Resort
                 </Link>
-                , located 5 minutes away from the benue. To book, please email
-                christina.antoniou@leptoscalypso.com with the title &quot;Walid
-                and Lara&apos;s Wedding&quot;.
-              </p>
-              <p className="leading-1 text-gray-500">
-                The renowned Coral Beach Hotel & Resort, is nestled on the south
+                , which is located 5 minutes away from the wedding venue. To
+                book a room, please email christina.antoniou@leptoscalypso.com
+                with the title &quot;Walid and Lara&apos;s Wedding&quot;. The
+                renowned Coral Beach Hotel & Resort, is nestled on the south
                 west of the Island on 300 meters of sandy beach and borders with
-                Akamas peninsula, an area protected by UNESCO. Occupying a
-                superb and stunning location and overlooking the golden sandy
-                beaches and sparkling waters of Coral Bay, the resort boasts
-                unique architecture which is inspired by nature, its
-                unparalleled surroundings and the fiery sunsets the hotel
-                enjoys.
+                Akamas peninsula, an area protected by UNESCO.
               </p>
             </div>
           </div>
@@ -126,7 +136,7 @@ export default function Home() {
                     fill="currentColor"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                       clip-rule="evenodd"
                     />
@@ -193,7 +203,7 @@ export default function Home() {
                     fill="currentColor"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                       clip-rule="evenodd"
                     />
@@ -231,7 +241,7 @@ export default function Home() {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                     clip-rule="evenodd"
                   />
@@ -253,7 +263,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
-                <p className="text-xl font-medium text-gray-900 font-serif">
+                <p className="text-xl font-bold text-gray-900 font-serif">
                   24th June: ✈️ & 🍽️
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
@@ -273,7 +283,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
-                <p className="text-xl font-medium text-gray-900 font-serif">
+                <p className="text-xl font-bold text-gray-900 font-serif">
                   25th June: 🏖️ & 🍺
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
@@ -293,8 +303,8 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
-                <p className="text-xl font-medium text-gray-900 font-serif">
-                  26th June: 🥾 & ⛏️🏺🗿⚱️
+                <p className="text-xl font-bold text-gray-900 font-serif">
+                  26th June: ⛏️ & 🏺
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
                   Cultural day trip! Take a guided tour of Paphos Archaeological
@@ -314,13 +324,14 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
-                <p className="text-xl font-medium text-gray-900 font-serif">
-                  28th June: Farewell Brunch
+                <p className="text-xl font-bold text-gray-900 font-serif">
+                  28th June: 🥞 & 👋
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
-                  Have a farewell brunch with all the guests before they depart
-                  Toast to the memories made during the wedding and exchange
-                  contact information for future get-togethers.
+                  We&apos;ll have a farewell brunch with all the guests before
+                  they depart. Guests can toast to the memories made during the
+                  wedding and exchange contact information for future
+                  get-togethers.
                 </p>
               </div>
             </div>
@@ -349,7 +360,7 @@ export default function Home() {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                     clip-rule="evenodd"
                   />
