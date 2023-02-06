@@ -1,8 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import Link from "next/link";
 import useCountdown from "../hooks/useCountdown";
-import { Wrapper } from "@googlemaps/react-wrapper";
-
+import { FaPhone } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 export default function Home() {
   const targetDate = "2023-06-27";
   const { days, hours, minutes, seconds } = useCountdown(targetDate);
@@ -13,7 +16,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto pt-4 sm:pt-10">
           <ul className="flex flex-row items-start justify-center gap-4 sm:gap-10 text-white text-lg sm:text-2xl uppercase">
             <li>
-              <a href="#story">Our Story</a>
+              <a href="#story">Wedding</a>
             </li>
             <li>
               <a href="#venue">The Venue</a>
@@ -51,7 +54,7 @@ export default function Home() {
           <div className="max-w-5xl ">
             <div className="flex items-center justify-center flex-col text-center">
               <h2 className="text-4xl font-bold block font-serif tracking-wide text-gray-700">
-                Our Story
+                Our Destination Wedding
               </h2>
               <div className="flex items-center flex-row justify-center">
                 <div className="text-gray-400 px-2">&#8212;&#8212;</div>
@@ -75,18 +78,21 @@ export default function Home() {
 
             <div className="text-center space-y-4 px-4 sm:px-0">
               <p className="leading-1 text-gray-500 font-sans">
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                est. Mauris placerat eleifend leo.
+                You can stay anywhere in Paphos! Otherwise, a special discount
+                is provided by Coral Beach Hotel & Resort, located 5 minutes
+                away from the benue. To book, please email
+                christina.antoniou@leptoscalypso.com with the title &quot;Walid
+                and Lara&apos;s Wedding&quot;
               </p>
               <p className="leading-1 text-gray-500">
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                est. Mauris placerat eleifend leo.
+                The renowned Coral Beach Hotel & Resort, is nestled on the south
+                west of the Island on 300 meters of sandy beach and borders with
+                Akamas peninsula, an area protected by UNESCO. Occupying a
+                superb and stunning location and overlooking the golden sandy
+                beaches and sparkling waters of Coral Bay, the resort boasts
+                unique architecture which is inspired by nature, its
+                unparalleled surroundings and the fiery sunsets the hotel
+                enjoys.
               </p>
               <p className="leading-1 text-gray-500">
                 Pellentesque habitant morbi tristique senectus et netus et
@@ -131,24 +137,38 @@ export default function Home() {
             <div className="flex items-center justify-center flex-col text-center">
               <div className="text-gray-500 leading-8 px-10">
                 <ul>
-                  <li>Consectetuer adipiscing elit.</li>
-                  <li>Aliquam tincidunt mauris eu risus.</li>
-                  <li>Vestibulum auctor dapibus neque.</li>
-                  <li>Consectetuer adipiscing elit.</li>
-                  <li>Aliquam tincidunt mauris eu risus.</li>
-                  <li>Vestibulum auctor dapibus neque.</li>
+                  <li className="font-bold">Coral Beach Hotel & Resort</li>
+                  <li>
+                    <FaMapMarkerAlt className="inline mb-1 mr-2" />
+                    Coral Bay Ave 70, Peyia 8575, Cyprus
+                  </li>
+                  <li>
+                    <FaPhone className="inline mb-1 mr-2" />
+                    +35726881000
+                  </li>
+                  <li>
+                    <FaEnvelope className="inline mb-1 mr-2" />
+                    christina.antoniou@leptoscalypso.com
+                  </li>
+                  <li>
+                    <CgWebsite className="inline mb-1 mr-2" />
+                    <Link
+                      className="font-medium text-blue-500 hover:text-blue-600"
+                      href="https://coral.com.cy/"
+                    >
+                      Hotel website
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="flex justify-center bg-gray-200 p-4 h-96">
-            <div className="bg-center bg-[url('/images/venue-1.jpg')] h-full w-full">
-              &nbsp;
-            </div>
-          </div>
+          <Link href="https://goo.gl/maps/cTcpaC8GQ2JqCsJ1A">
+            {" "}
+            <div className="flex justify-center bg-gray-200 p-4 h-96 bg-cover bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=34.85766475656742,32.36255412490238&zoom=12&size=900x900&markers=color:red%7C34.85766475656742,32.36255412490238&key=AIzaSyCZSRcrSDPJ88K3w_s9Rmmr7g5m5Y9LFhA')]"></div>
+          </Link>
         </div>
-
         <div className="grid grid-cols-1 gap-10 sm:gap-0 sm:grid-cols-2">
           <div className="flex justify-center bg-gray-200 p-4 row-start-2 sm:row-start-1 h-96">
             <div className="bg-center bg-[url('/images/venue-2.jpg')] h-full w-full">
@@ -380,18 +400,4 @@ export default function Home() {
         <div className="text-center space-y-4 max-w-4xl mx-auto ">
           <p className="text-sm p-10">Test</p>
         </div> </div>*/
-}
-
-{
-  /* <div
-className="bg-no-repeat bg-center bg-fixed bg-hero">
-<div className="px-6 py-44 bg-black bg-opacity-50 text-white text-center">
-  <h1 className={`${allura.className} font-cursive text-5xl font-bold mb-4`}>Walid and Lara&apos;s Wedding</h1>
-  <p className="text-xl mb-6">
-    Join us as we celebrate our love on June 27, 2023 in Paphos, Cyprus
-  </p>
-  <div className="text-xl font-bold mb-2">See you in {days} Days, {hours} Hours, {minutes} Minutes 
-  </div>
-</div>
-</div> */
 }
