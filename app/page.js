@@ -250,8 +250,8 @@ export default function Home() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
-                  className="h-36 w-36 rounded-full"
-                  src="images/person-1.jpeg"
+                  className="h-36 w-36 rounded-full object-cover"
+                  src="/person-1.jpg"
                   alt=""
                 />
               </div>
@@ -270,8 +270,8 @@ export default function Home() {
             <div className="flex items-center ">
               <div className="flex-shrink-0">
                 <img
-                  className="h-36 w-36 rounded-full"
-                  src="images/person-2.jpeg"
+                  className="h-36 w-36 rounded-full object-cover"
+                  src="/person-2.jpg"
                   alt=""
                 />
               </div>
@@ -290,8 +290,8 @@ export default function Home() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
-                  className="h-36 w-36 rounded-full"
-                  src="images/person-3.jpeg"
+                  className="h-36 w-36 rounded-full object-cover"
+                  src="person-3.jpg"
                   alt=""
                 />
               </div>
@@ -311,8 +311,8 @@ export default function Home() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
-                  className="h-36 w-36 rounded-full"
-                  src="images/person-4.jpeg"
+                  className="h-36 w-36 rounded-full object-cover"
+                  src="/person-4.jpg"
                   alt=""
                 />
               </div>
