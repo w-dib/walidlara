@@ -24,9 +24,6 @@ export default function Home() {
             <li>
               <a href="#party">Itinerary</a>
             </li>
-            <li>
-              <a href="#rsvp">RSVP</a>
-            </li>
           </ul>
         </div>
         <div className="absolute top-1/2 sm:top-1/4 w-full">
