@@ -19,10 +19,10 @@ export default function Home() {
               <a href="#story">Wedding</a>
             </li>
             <li>
-              <a href="#venue">The Venue</a>
+              <a href="#venue">Venue</a>
             </li>
             <li>
-              <a href="#party">The Party</a>
+              <a href="#party">Itinerary</a>
             </li>
             <li>
               <a href="#rsvp">RSVP</a>
@@ -78,11 +78,23 @@ export default function Home() {
 
             <div className="text-center space-y-4 px-4 sm:px-0">
               <p className="leading-1 text-gray-500 font-sans">
-                You can stay anywhere in Paphos! Otherwise, a special discount
-                is provided by Coral Beach Hotel & Resort, located 5 minutes
-                away from the benue. To book, please email
+                Together with our families, we are delighted to invite you to
+                our wedding in Paphos, Cyprus. Please save the date and join us
+                for a week of fun in the sun! We can&apos;t wait to see you
+                there!
+              </p>
+              <p className="leading-1 text-gray-500">
+                You can stay anywhere in Paphos. Otherwise, a special discount
+                is provided by the{" "}
+                <Link
+                  className="font-medium text-blue-500 hover:text-blue-600"
+                  href="https://coral.com.cy/"
+                >
+                  Coral Beach Hotel & Resort
+                </Link>
+                , located 5 minutes away from the benue. To book, please email
                 christina.antoniou@leptoscalypso.com with the title &quot;Walid
-                and Lara&apos;s Wedding&quot;
+                and Lara&apos;s Wedding&quot;.
               </p>
               <p className="leading-1 text-gray-500">
                 The renowned Coral Beach Hotel & Resort, is nestled on the south
@@ -93,13 +105,6 @@ export default function Home() {
                 unique architecture which is inspired by nature, its
                 unparalleled surroundings and the fiery sunsets the hotel
                 enjoys.
-              </p>
-              <p className="leading-1 text-gray-500">
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                est. Mauris placerat eleifend leo.
               </p>
             </div>
           </div>
@@ -112,7 +117,7 @@ export default function Home() {
           <div className="flex items-center justify-center flex-col">
             <div className="flex items-center justify-center flex-col text-center">
               <h2 className="text-4xl font-bold block font-serif tracking-wide text-gray-700">
-                The venue
+                Venue
               </h2>
               <div className="flex items-center flex-row justify-center">
                 <div className="text-gray-400 px-2">&#8212;&#8212;</div>
@@ -170,8 +175,8 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid grid-cols-1 gap-10 sm:gap-0 sm:grid-cols-2">
-          <div className="flex justify-center bg-gray-200 p-4 row-start-2 sm:row-start-1 h-96">
-            <div className="bg-center bg-[url('/images/venue-2.jpg')] h-full w-full">
+          <div className="flex justify-center bg-gray-200 row-start-2 sm:row-start-1 h-96">
+            <div className="bg-center bg-[url('/Resort.jpg')] h-full w-full">
               &nbsp;
             </div>
           </div>
@@ -203,11 +208,9 @@ export default function Home() {
 
             <div className="flex items-center justify-center flex-col text-center">
               <p className="text-gray-500 px-10 leading-8">
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis
-                egestas. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada fames ac turpis egestas.
+                We urge our guests to gather outside of the Coral Beach Hotel &
+                Resort at 6:00pm. There will be a bus waiting to take you to the
+                nearby wedding venue. The bus will leave at 6:15pm.
               </p>
             </div>
           </div>
@@ -219,7 +222,7 @@ export default function Home() {
         <div>
           <div className="flex items-center justify-center flex-col text-center">
             <h2 className="text-4xl font-bold block font-serif tracking-wide text-gray-700">
-              The Party
+              Itinerary
             </h2>
             <div className="flex items-center flex-row justify-center">
               <div className="text-gray-400 px-2">&#8212;&#8212;</div>
@@ -254,13 +257,12 @@ export default function Home() {
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
                 <p className="text-xl font-medium text-gray-900 font-serif">
-                  Leslie Alexander
+                  24th June: ✈️ & 🍽️
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas. Pellentesque habitant morbi
-                  tristique senectus et netus et malesuada fames ac turpis
-                  egestas.
+                  Arrival and welcome dinner! Guests arrive and settle into
+                  their accommodation. Welcome dinner in a local restaurant to
+                  kick off the festivities!
                 </p>
               </div>
             </div>
@@ -275,13 +277,10 @@ export default function Home() {
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
                 <p className="text-xl font-medium text-gray-900 font-serif">
-                  Leslie Alexander
+                  25th June: 🏖️ & 🍺
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas. Pellentesque habitant morbi
-                  tristique senectus et netus et malesuada fames ac turpis
-                  egestas.
+                  Guests can spend the day lounging by the add beach name beach.
                 </p>
               </div>
             </div>
@@ -298,13 +297,13 @@ export default function Home() {
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
                 <p className="text-xl font-medium text-gray-900 font-serif">
-                  Leslie Alexander
+                  26th June: 🥾 & ⛏️🏺🗿⚱️
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas. Pellentesque habitant morbi
-                  tristique senectus et netus et malesuada fames ac turpis
-                  egestas.
+                  Cultural day trip! Take a guided tour of Paphos Archaeological
+                  Park to learn about the history and culture of the area Visit
+                  the Tombs of the Kings, a UNESCO World Heritage site, and the
+                  Paphos mosaics
                 </p>
               </div>
             </div>
@@ -319,13 +318,12 @@ export default function Home() {
               </div>
               <div className="flex-1 min-w-0 justify-start px-4 space-y-2">
                 <p className="text-xl font-medium text-gray-900 font-serif">
-                  Leslie Alexander
+                  28th June: Farewell Brunch
                 </p>
                 <p className="text-sm text-gray-500 leading-5">
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas. Pellentesque habitant morbi
-                  tristique senectus et netus et malesuada fames ac turpis
-                  egestas.
+                  Have a farewell brunch with all the guests before they depart
+                  Toast to the memories made during the wedding and exchange
+                  contact information for future get-togethers.
                 </p>
               </div>
             </div>
